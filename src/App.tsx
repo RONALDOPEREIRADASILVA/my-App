@@ -1,17 +1,31 @@
-import * as c from'./App.styles';
+import { useState } from 'react';
+import { Container,Header,HeaderText,Body } from './App.styles';
+import { Item } from './types/item';
+import { category } from './types/Category';
+import { categories } from './data/categories';
+import { items } from './data/items';
 
-const App = () =>{
+const App = () => {
+  const[list, setList] = useState(items);
+  const[currentMonth, setCurrentMonth]= useState()
+                  
+
   return (
-    <c.container>
-      <c.Header>
-          <c.HeaderText>Sistema Financeiro</c.HeaderText>
+    <Container>
+      <Header>
+       <HeaderText>Sistema Financeiro</HeaderText>
 
-      </c.Header>
-      <c.Body>
+      </Header>
+      <Body>
+       {/*Área de informações*/}
 
-      </c.Body>
+       {/*Área de inserção*/}
 
-    </c.container>
+       {/*Tabela de itens*/}
+
+      </Body>
+
+    </Container>
 
   );
 
