@@ -1,21 +1,21 @@
-import * as c from "./App.styles"
+import * as c from' ./App.styles ';
 
 
   const App = () =>{
     return (
-      <c.container>
-        <c.Header>
-          <c.Headertext>Sistema Financeiro</c.Headertext>
+      <container>
+        <Header>
+          <Headertext>Sistema Financeiro</Headertext>
 
-        </c.Header>
-        <c.Body>
+        </Header>
+        <Body>
 
-        </c.Body>
+        </Body>
 
-      </c.container>
+      </container>
 
     );
 
   }
 
-export default App;
+  export default App;
