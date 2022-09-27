@@ -1,43 +1,44 @@
+
 import { useState ,useEffect} from 'react';
 import { Container,Header,HeaderText,Body } from './App.styles';
 import { Item } from './types/item';
 import { category } from './types/Category';
 import { categories } from './data/categories';
 import { items } from './data/items';
-import { getCurrenteMonth, filterListByNonth} from './helpers/dateFilter';
+import { getCurrenteMonth, filterListByMonth} from './helpers/dateFilter';
 import { TableArea } from './components/TableArea';
 
 
 
-const App = () => {
-  const[list, setList] = useState(items);
-  const[filteredList,setfilteredList]= useState<Item[]>([]);
-  const[currentMonth, setCurrentMonth]= useState(getCurrenteMonth());
+const App= () =>{
+  const [list, setList] = useState(items);
+  const [filteredList, setfilteredList] = useState<Item[]>([]);
+  const [currentMonth, setCurrentMonth] = useState(getCurrenteMonth());
 
-  useEffect(()=>{
-    setfilteredList( filterListByNonth(list , currentMonth));
+  useEffect(() => {
+    setfilteredList(filterListByMonth(list, currentMonth));
 
-  },[list, currentMonth]);
-                  
+  }, [list, currentMonth]);
+
 
   return (
     <Container>
       <Header>
-       <HeaderText>Sistema Financeiro</HeaderText>
+        <HeaderText>Sistema Financeiro</HeaderText>
 
       </Header>
       <Body>
-       {/*Área de informações*/}
+        {/*Área de informações*/}
 
-       {/*Área de inserção*/}
+        {/*Área de inserção*/}
 
-       <TableArea list={filteredList}/>
+        <TableArea list={filteredList} />
 
       </Body>
 
     </Container>
 
-  )
+  );
 
 }
 
