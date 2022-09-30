@@ -3,11 +3,15 @@
         "Alimentação",
         "ampproject",
         "Área",
+        "Balanço",
         "carteira",
         "Categoria",
         "compat",
         "compnents",
+        "componnets",
+        "Curreent",
         "Currente",
+        "Despesas",
         "Donalds",
         "entrada",
         "expene",
@@ -20,10 +24,13 @@
         "itens",
         "jridgewell",
         "Momth",
+        "Moonth",
         "opencollective",
         "Reagir",
+        "Receitas",
         "Salário",
         "setfiltered",
-        "Tabela"
+        "Tabela",
+        "tableitem"
     ]
 }

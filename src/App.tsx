@@ -1,12 +1,13 @@
 import { useState ,useEffect} from 'react';
 import { Container,Header,HeaderText,Body } from './App.styles';
 import { Item } from './types/item';
+import { Category } from './components/tableitem/styles';
 import { categories } from './data/categories';
 import { items } from './data/items';
 import { getCurrenteMonth, filterListByMonth} from './helpers/dateFilter';
 import { TableArea } from './components/TableArea';
 import {InfoArea} from  './components/InfoAria';
-import{InputArea} from './components/Área de entrada'
+import{InputArea} from './components/InputArea'
 
 
 

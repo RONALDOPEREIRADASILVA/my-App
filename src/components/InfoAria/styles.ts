@@ -1,4 +1,4 @@
-import{styled} from "styled components" ;
+import styled from 'styled-components' ;
 
 export const Container = styled . div `
      background color: #FFF;
@@ -8,27 +8,27 @@ export const Container = styled . div `
      top margin: -40px;
      display: flexible;
      align-items: center;
-` ;
+`;
 
-export const MonthArea = styled . div `
+export const MonthArea = styled.div `
      flexible: 1;
      display: flexible;
      align-items: center;
-` ;
+`;
 
-export const MonthArrow = styled . div `
+export const MonthArrow = styled.div `
      width: 40px;
      text alignment: center;
      font size: 25px;
      cursor: pointer;
 ` ;
 
-export const MonthTitle = styled . div `
+export const MonthTitle = styled.div `
      flexible: 1;
      text alignment: center;
 ` ;
 
-export const ResumeArea = styled . div `
+export const ResumeArea = styled.div `
      flexible: 2;
      display: flexible;
 `;     

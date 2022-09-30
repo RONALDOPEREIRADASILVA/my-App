@@ -1,4 +1,4 @@
-import * as C from '../Resume Item/styled'
+import * as C from './styled'
 
 
 type Props = {
@@ -7,11 +7,11 @@ type Props = {
      color ?: string ;
 }
 
-export const ResumeItem = ( { title , value , color } : Props ) => {
+export const ResumeItem = ({ title , value , color } : Props ) => {
     return   (
         <C.Container>
             <C.Title > { title } </C.Title >
-            <C.Info color = { color }> R$ { value }</C.Info>
+            <C.Info color = { color}> R$ { value }</C.Info>
         </C.Container>
     );
 }

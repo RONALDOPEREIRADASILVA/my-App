@@ -1,6 +1,6 @@
 import { useState } from 'react' ;
-import * as C from '../Área de entrada' ;
-import { Item } from '../../types/Item' ;
+import * as C from '.' ;
+import { Item} from '../../types/Item' ;
 
 import { categories } from '../../data/categories' ;
 import { newDateAdjusted} from '../../helpers/dateFilter' ;
